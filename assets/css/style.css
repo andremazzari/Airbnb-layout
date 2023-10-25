@@ -1,0 +1,789 @@
+@font-face {
+    font-family: "Montserrat--light";
+    src: url("../fonts/static/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat--regular";
+    src: url("../fonts/static/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat--medium";
+    src: url("../fonts/static/Montserrat-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat--semi--bold";
+    src: url("../fonts/static/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat--bold";
+    src: url("../fonts/static/Montserrat-Bold.ttf");
+}
+
+* {
+    font-family: "Montserrat--regular", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-airbnb {
+    width: 100%;
+}
+
+.header-menu {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-left {
+    height: 100%;
+    flex: 8;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 4%;
+}
+
+.header-center {
+    height: 100%;
+    flex: 6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-right {
+    height: 100%;
+    flex: 8;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-right: 4%;
+}
+
+.airbnb-logo-container {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+}
+
+.airbnb-logo {
+    width: 102;
+    height: 32;
+    color: rgb(255, 56, 92);
+}
+
+.header-menu-item {
+    font-size: 14px;
+    cursor: pointer;
+    color: #717171;
+}
+
+.header-menu-item-active {
+    font-family: "Montserrat--semi--bold", sans-serif;
+    color: #222222 !important;
+}
+
+.header-menu-item-nonactive:hover {
+    color: #131313;
+}
+
+.header-right-item {
+    margin-left: 10px;
+}
+
+.header-airbnb-your-home {
+    display: flex;
+    align-items: center;
+    font-family:  "Montserrat--semi--bold", sans-serif;
+    padding: 12px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.header-airbnb-your-home:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.header-language-region {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header-language-region:hover {
+    background-color: rgb(247, 247, 247);
+}
+
+.header-language-region-icon {
+    font-size: 19px !important;
+}
+
+.header-sign-in {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 12px;
+    border: 0.2px solid rgb(205, 204, 204);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.header-sign-in:hover {
+    box-shadow: 0px 2px 4px 0.1px rgb(208, 208, 208);
+}
+
+.header-sign-in-lines {
+    font-size: 18px;
+}
+
+.header-sign-in-user {
+    font-size:32px;
+    margin-left: 8px;
+}
+
+.header-search {
+    height: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.header-search-items {
+    height: 64px;
+    width: 70%;
+    max-width: 860px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.5px solid rgb(205, 202, 202);
+    border-radius: 30px;
+    box-shadow: 0px 2px 7px 1px rgb(216, 216, 216);
+}
+
+.header-search-item {
+    height: 52px;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 0;
+    border-radius: 30px;
+    padding-top: 12px;
+    padding-left: 2.8%;
+}
+
+.header-search-item:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+.header-search-item-where {
+    flex: 3;
+}
+
+.header-search-item-check-in {
+    flex: 1;
+}
+
+.header-search-item-check-out {
+    flex: 1
+}
+
+.header-search-item-who {
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-search-item-who-fields {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header-search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 56, 92);
+    margin-right: 10px;
+    margin-top: -5px;
+    z-index: 9999;
+    color: white
+}
+
+.header-search-button:hover {
+    background-color: rgb(223, 20, 98);
+}
+
+.header-search-separator {
+    height: 50%;
+    width: 1px;
+    background-color: rgb(220, 218, 218);
+}
+
+.header-search-item-check-in, .header-search-item-check-out, .header-search-item-who {
+    font-size: 14px;
+    color: #717171;
+}
+
+.header-search-item-text {
+    font-family: "Montserrat-medium", sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.header-search-item-where-input {
+    width: 90%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+.horizontal-separator {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(220, 218, 218);
+}
+
+.destination-options {
+    height: 98px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
+.destination-types {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: 7;
+}
+
+.destination-type {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.destination-type-image {
+    width: 24px;
+    height: 24px;
+}
+
+.destination-type-text {
+    font-size: 11px;
+}
+
+.destination-type-text-active {
+    color: black !important;
+    font-family: "Montserrat--medium";
+    font-weight: 600;
+}
+
+.destination-type-separator-active {
+    background-color: black;
+    width: 40px;
+    height: 2px;
+    margin-top: 10px;
+}
+
+.destination-type-separator-nonactive {
+    background: transparent;
+    width: 40px;
+    height: 2px;
+    margin-top: 10px;
+}
+
+.destination-types-options {
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.more-destination-types {
+    width: 28px;
+    height: 28px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.more-destination-types:hover {
+    width: 29px;
+    height: 29px;
+    box-shadow: 0 0 8px 0.5px rgb(216, 216, 216);
+}
+
+.destination-filters {
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(220, 218, 218);
+    border-radius: 12px;
+    font-size: 11px;
+    font-family: "Montserrat--medium", sans-serif;
+    font-weight: 600;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.destination-filter-icon{
+    font-size: 16px;
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.destination-taxes {
+    height: 45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 11px;
+    font-family: "Montserrat--medium", sans-serif;
+    font-weight: 600;
+    border: 1px solid rgb(220, 218, 218);
+    border-radius: 12px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.destination-taxes-text {
+    margin-right: 5px;
+}
+
+.destination-taxes-button {
+    width: 30px;
+    height: 20px;
+    background-color: rgb(176,176,176);
+    border-radius: 14px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2px;
+    margin-left: 5px;
+}
+
+.destination-taxes-button:hover {
+    background-color: rgb(114, 114, 114);
+}
+
+.destination-taxes-button-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.destinations-area{
+    padding: 0 50px;
+}
+
+.destinations-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;;
+}
+
+.destination {
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
+.destination-img-container {
+    width: 275px;
+    height: 265px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.destination-img {
+    width: 100%;
+    height: 100%;
+    transform: translate(0px, 0) scale(1.448, 1);
+}
+
+.destination-favorite {
+    z-index: 9999;
+    position: relative;
+    top: -95%;
+    right: -85%;
+}
+
+.image-dots-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -15%;
+    z-index: 9999;
+}
+
+.image-dot{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+}
+
+.image-dot-active {
+    background-color: white;
+}
+
+.image-dot-nonactive {
+    background-color: rgb(176,176,176);
+}
+
+.destination-infos {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+.destination-infos-left {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.destination-infos-right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.destination-location {
+    font-family: "Montserrat--semi--bold", sans-serif;
+    font-weight: 100;
+    font-size: 13.5px;
+}
+
+.destination-distance {
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+    font-weight: 600;
+    font-family: "Montserrat--light";
+    margin-top: 3px;
+}
+
+.destination-dates {
+    font-size: 14px;
+    color: rgb(95, 95, 95);
+    font-weight: 600;
+    font-family: "Montserrat--light";
+    margin-top: 2px;
+}
+
+.destination-price {
+    font-size: 14;
+    margin-top: 6px;
+}
+
+.destination-rating-icon {
+    margin-right: -2px;
+    font-size: 17px;
+    margin-right: 3px;
+}
+
+.destination-rating-number {
+    font-size: 14px;
+    font-family: "Montserrat--medium";
+}
+
+.more-destinations {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.more-destinations p {
+    font-size: 17px;
+    font-family: "Montserrat--semi--bold";
+}
+
+.show-more-button {
+    background-color: black;
+    color: white;
+    padding: 13px 22px;
+    border-radius: 7px;
+    font-family: "Montserrat--semi--bold";
+    cursor: pointer;
+}
+
+.site-bottom {
+    background-color: rgb(247,247,247);
+    margin-top: 50px;
+}
+
+.inspiration-future {
+    padding: 30px 50px;
+}
+
+.inspiratio-title {
+    font-size: 23px;
+    font-family: "Montserrat--semi--bold";
+}
+
+.inspiration-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inspiration-menu-item {
+    margin-right: 30px;
+    font-size: 13px;
+    font-family: "Montserrat--semi--bold";  
+    font-weight: 600;
+}
+
+.inspiration-menu-item-active {
+    color: black;
+}
+
+.inspiration-menu-item-nonactive {
+    color: rgb(113, 113, 113);
+    cursor: pointer;
+}
+
+.inspiration-menu-separator-active {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    margin-top: 15px;
+}
+
+.inspiration-menu-separator-nonactive {
+    width: 100%;
+    height: 2px;
+    background: transparent;
+    margin-top: 15px;
+}
+
+.inspiration-separator {
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(220, 218, 218);
+    margin-bottom: 25px;
+}
+
+
+.inspiration-itens-row {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.inspiration-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between  ;
+    align-items: flex-start;
+    font-size: 13px;
+    font-family: "Montserrat--semi--bold"; 
+    cursor: pointer;
+}
+
+.inspiration-item-title {
+    color: black;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+
+.inspiration-item-subtitle {
+    color: rgb(113, 113, 113);
+}
+
+.inspiration-item-show-more {
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 13px;
+    font-family: "Montserrat--semi--bold";
+}
+
+.site-bottom-separator {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(220, 218, 218);
+}
+
+.site-footer {
+    padding: 30px 50px 0px 50px;
+}
+
+.footer-menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 60px;
+}
+
+.footer-menu {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.footer-menu-title {
+    flex: 1;
+    font-size: 13px;
+    font-family: "Montserrat--semi--bold";
+}
+
+.footer-menu-item {
+    flex: 1;
+    margin-top: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-menu-item:hover {
+    text-decoration: underline;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;;
+}
+
+.footer-info-left {
+    flex: 1;
+
+    font-size: 13px;
+}
+
+.footer-info-right {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 13px;
+}
+
+.footer-info-left-link {
+    cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.footer-info-left-link:hover {
+    text-decoration: underline;
+}
+
+.airbnb-inc {
+    margin-right: 5px;
+}
+
+.footer-info-right span {
+    margin-left: 18px;
+}
+
+.footer-info-right-language-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.footer-info-right-language {
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.footer-info-right-language:hover {
+    text-decoration: underline;
+}
+
+.footer-info-right-currency {
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.footer-info-right-currency:hover {
+    text-decoration: underline;
+}
+
+.footer-info-right-social-media {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info-right-social-media-icon  {
+    margin-right: 15px;
+    cursor: pointer;
+}
